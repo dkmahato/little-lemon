@@ -54,3 +54,12 @@ code {
 .footerContent p{
   color: black;
 }
+.btn_go_back{
+  color: black;
+}
+.dateAndTime {
+    background-color: #6f48eb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

@@ -3,6 +3,7 @@ import { Avatar, Button, Heading, VStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import styled from "@emotion/styled";
 import restauranfood from '../images/restauranfood.jpg'
+import { NavLink } from "react-router-dom";
 
 const heading = "Little Lemon";
 const subHeading = "Chicago";
@@ -20,9 +21,11 @@ const LandingSection = () => (
       <Heading><div style={{color:"#F4CE14",fontFamily:"initial"}}>{heading}</div></Heading>
       <h1 style={{lineHeight:"2",fontSizeL:"20px"}}>{subHeading}</h1>
       <div style={{width:"35%",lineHeight:"1.5",paddingBottom:"15px"}}><p>{content}</p></div>
-      <Button colorScheme="yellow" style={{fontFamily:"sans-serif"}}>
+      <NavLink to="/reservations">
+        <Button colorScheme="yellow" style={{fontFamily:"sans-serif"}}>
                 Reserve a table
               </Button>
+        </NavLink>
       </div>
       <div>
         <img src={restauranfood} style={{width:"15rem",height:"18rem",position:"absolute",borderRadius:"15px",right:"11rem"}}/>

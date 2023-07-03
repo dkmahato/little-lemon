@@ -36,8 +36,7 @@ const Footer = () => {
       >
     
           <div className="footerContent">
-          <Image src={require("../images/Mario_Adrian.jpg")} className="card-image"/>
-          
+            <Image src={require("../images/Mario_Adrian.jpg")} className="card-image"/>
           </div>
           <div className="footerContent">
             <h1>Doormat Navigation</h1>
@@ -60,9 +59,6 @@ const Footer = () => {
             <p>Phone number</p>
             <p>Email</p>
           </div>
-          <div style={{color:"#fff"}}><p>fjfjh</p></div>
-        
-
       </Box>
         <Flex
           margin="0 auto"
