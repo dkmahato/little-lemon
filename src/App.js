@@ -1,43 +1,15 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import Header from "./components/Header";
-import LandingSection from "./components/LandingSection";
-import ProjectsSection from "./components/ProjectsSection";
-import ContactMeSection from "./components/ContactMeSection";
-import Footer from "./components/Footer";
-import { AlertProvider } from "./context/alertContext";
-import Alert from "./components/Alert";
-import Home from "./components/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Error from "./components/Error";
-import Menu from "./components/Menu";
-import Reservations from "./components/Reservations";
-import Order from "./components/Order";
-import Login from "./components/Login";
+import Navbar from './components/Navbar';
+import Routing from './components/Routing';
+import Footer from './components/Footer';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import './App.css'
 
-function App() {
+export default function App() {
   return (
-    <ChakraProvider>
-      <AlertProvider>
-        <main>
-          <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/reservations" element={<Reservations />} />
-          <Route path="/Order" element={<Order />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
-        <Footer />
-        <Alert />
-      </BrowserRouter>
-          
-        </main>
-      </AlertProvider>
-    </ChakraProvider>
+    <>
+      <Navbar/>
+      <Routing />
+      <Footer />
+    </>
   );
 }
-
-export default App;
