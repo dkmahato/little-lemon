@@ -7,7 +7,50 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  background-color: #18181b;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.cardDesign{
+  background-color: #EDEFEE;
+  border-radius: 10px 10px 0px 0px;
+}
+.card-image{
+  border-radius: 10px 10px 0px 0px;
+  width: 380rem;
+  height: 15rem;
+}
+.cardText{
+  padding: 10px;
+}
+.cardTitle{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.cardDescription{
+  font-size: 12px;
+}
+.cardBook{
+  font-size: 14px;
+  font-weight: bold;
+}
+.cardPrice{
+  color: #EE9972;
+}
+.footerBody{
+  padding: 50px;
+  background-color: #D9D9D9;
+}
+.footerContent h1{
+  color: #495E57;
+  font-weight: bold;
+}
+.footerContent p{
+  color: black;
 }
